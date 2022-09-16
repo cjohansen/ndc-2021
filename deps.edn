@@ -1,0 +1,17 @@
+{:paths ["src" "resources"]
+ :deps {org.clojure/clojure {:mvn/version "1.10.3"}
+        org.clojure/clojurescript {:mvn/version "1.10.893"}
+        com.cognitect/transit-clj {:mvn/version "0.8.313"}
+        cjohansen/dumdom {:mvn/version "2021.10.29"}
+        datascript/datascript {:mvn/version "1.2.10"}
+        jarohen/chord {:mvn/version "0.8.1"
+                       :exclusions [com.cognitect/transit-cljs]}
+        com.domkm/silk {:mvn/version "0.1.2"}}
+ :aliases
+ {:dev {:extra-deps {com.bhauman/figwheel-main {:mvn/version "0.2.15"}
+                     cider/piggieback {:mvn/version "0.5.3"}
+                     cjohansen/gadget-inspector {:local/root "../../../../projects/gadget-inspector/lib"}
+                     ;;{:mvn/version "0.2020.09.10"}
+                     devcards/devcards {:mvn/version "0.2.6"}
+                     net.clojars.cjohansen/dumdom-devcards {:mvn/version "2021.06.14"}}
+        :extra-paths ["dev" "dev-resources" "devcards"]}}}
